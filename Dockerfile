@@ -10,4 +10,5 @@ USER ${LUSER}
 VOLUME /home/${LUSER}/working
 VOLUME /home/${LUSER}/.ssh
 RUN /usr/local/bin/lein
+WORKDIR /home/${LUSER}
 CMD /usr/bin/emacs
